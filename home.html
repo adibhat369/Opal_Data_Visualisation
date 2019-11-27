@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Creating visualisations from data</title>
+        <link rel="stylesheet" href="styling.css">
+        <!-- STYLING -->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+        <style>
+            .leaflet-popup-content {
+                width: auto !important;
+            }
+
+            #map {display:none;}
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <script type="text/javascript" src="visualisation.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+        <center>
+            <h1> OPAL (PUBLIC TRANSPORT) DATA VISUALIZATION</h1>
+        </center>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">OVERVIEW</button>
+            <button class="tablinks" onclick="openCity(event, 'TRAIN')">TRAIN VISUALIZATION</button>
+            <!--  <button class="tablinks" onclick="openCity(event, 'TRAM')">TRAM</button>-->
+            <button class="tablinks" onclick="openCity(event, 'FERRY')">FERRY VISUALIZATION</button>
+        </div>
+
+
+        <!-- Tab content -->
+        <div id="Overview" class="tabcontent">
+            <center><h1><u>OVERVIEW STATISTICS</u></h1></center>
+            <h2><B><u>MOST PREFERRED MEANS OF TRANSPORT IN NSW:</u></B></h2>
+            <h3> DONUT CHART =></h3>
+            <script type="text/javascript" src="overview.js"></script>
+            <center>
+                <div id='donutchart'></div> </center>
+            <h2><B><u>MONTHLY VARIATIONS IN EACH MODE OF TRANSPORT</u></B></h2>
+            <h3> HEATMAP => </h3>
+            <center>
+                <div id='heatmap' ></div>
+            </center>
+        </div>
+
+
+        <div id="TRAIN" class="tabcontent">
+            <center>
+                <h3>LINE BASED VISUALIZATION - TRAIN</h3>
+
+
+                <script type="text/javascript" src="trainvis.js"></script>
+
+                
+                <button onclick="displayMap()">Show Map</button>
+            </center>
+            <div id='checkboxes' style="display:none">
+                <h3> Ticket Category Types</h3>
+                <input type="checkbox" class="myCheckbox" value="student" id="student"><label for="student"> <span></span> School Student</label>
+                <input type="checkbox" class="myCheckbox" value="adult" id="adult"> <label for="adult"><span></span> Adult</label>
+                <input type="checkbox" class="myCheckbox" value="senior" id="senior"><label for="senior"><span></span>  Senior Citizens</label>
+                <input type="checkbox" class="myCheckbox" value="concession" id="concession"><label for="concession"><span></span>  Concession</label>
+            </div>
+            <center>
+                <div id="map" style="width: 800px; height: 600px"></div>
+            </center>
+            
+        </div>
+
+
+        <div id="FERRY" class="tabcontent">
+            <center>
+                <h3>LINE BASED VISUALIZATION - FERRY</h3>
+
+                <script type="text/javascript" src="Ferry.js"></script>
+
+                <button onclick="fdisplayMap()">Show Map</button>
+            </center>
+
+            <div id='fcheckboxes' style="display:none">
+                <h3> Ticket Category Types</h3>
+                <input type="checkbox" class="fmyCheckbox" value="student" id="fstudent"><label for="fstudent"> <span></span> School Student</label>
+                <input type="checkbox" class="fmyCheckbox" value="adult" id="fadult"> <label for="fadult"><span></span> Adult</label>
+                <input type="checkbox" class="fmyCheckbox" value="senior" id="fsenior"><label for="fsenior"><span></span>  Senior Citizens</label>
+                <input type="checkbox" class="fmyCheckbox" value="concession" id="fconcession"><label for="fconcession"><span></span>  Concession</label>
+            </div>
+            <center>
+                <div id="fmap" style="width: 800px; height: 600px"></div>
+            </center>
+        </div>
+
+
+        <script>
+            document.getElementById('defaultOpen').click();
+        </script>
+    </body>
+</html>
