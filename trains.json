@@ -1,0 +1,24 @@
+{"stations":[
+{"station":{"coordinates":[-33.8832,151.2070], "label": "Sydney Central Station"}},
+{"station":{"coordinates":[-33.9544,150.8079], "label": "Leppington Station"}},
+{"station":{"coordinates":[-33.5989,150.7526], "label": "Richmond Station"}},
+{"station":{"coordinates":[-33.9242,150.9273], "label": "Liverpool station"}},
+{"station":{"coordinates":[-34.1768,150.9950], "label": "Helensburg station"}},
+{"station":{"coordinates":[-33.7821,151.0470], "label": "Carlingford station"}},
+{"station":{"coordinates":[-33.8359,151.0170], "label": "Clyde station"}},
+{"station":{"coordinates":[-33.8638,151.0450], "label": "Lidcombe station"}},
+{"station":{"coordinates":[-33.8465,151.0694], "label": "Olympic park station"}},
+{"station":{"coordinates":[-33.7035,151.0982], "label": "Hornsby Station"}},
+{"station":{"coordinates":[-34.0719,150.7970], "label": "Macarthur Station"}}
+],
+"lines":[
+ {"line":{"name":"T2 Airport, Inner West and South Line", "startcord":[-33.8832,151.2070], "endcord":[-33.9544,150.8079], "color": "red"}},
+    {"line":{"name":"T1 North Shore, Northern and Western Line", "startcord":[-33.8832,151.2070], "endcord":[-33.5989,150.7526], "color": "blue"}},
+    {"line":{"name":"T3 Bankstown Line", "startcord":[-33.8832,151.2070], "endcord":[-33.9242,150.9273], "color": "green"}}, 
+{"line":{"name":"T4 Eastern Suburbs and Illawarra Line", "startcord":[-33.8832,151.2070], "endcord":[-34.1768,150.9950], "color": "pink"}},    
+{"line":{"name":"T5 Cumberland Line", "startcord":[-33.9544,150.8079], "endcord":[-33.5989,150.7526], "color": "orange"}},    
+{"line":{"name":"T6 Carlingford Line", "startcord":[-33.7821,151.0470], "endcord":[-33.8359,151.0170], "color": "brown"}},    
+{"line":{"name":"T7 Olympic Park Line", "startcord":[-33.8638,151.0450], "endcord":[-33.8465,151.0694], "color": "grey"}},    
+{"line":{"name":"T8 Airport and South Line", "startcord":[-33.8832,151.2070], "endcord":[-33.7035,151.0982], "color": "yellow"}}    
+
+ ]}
