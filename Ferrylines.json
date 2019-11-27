@@ -1,0 +1,24 @@
+{"wharfs":[
+{"wharf":{"coordinates":[-33.8004,151.2836], "label": "Manly Wharf"}},
+{"wharf":{"coordinates":[-33.8607,151.2120], "label": "Circular Quay"}},
+{"wharf":{"coordinates":[-33.8463,151.2395], "label": "Taronga Zoo Wharf"}},
+{"wharf":{"coordinates":[-33.8178,151.0438], "label": "Rydalmere Wharf"}},
+{"wharf":{"coordinates":[-33.8436,151.1281], "label": "Abbotsford Wharf"}},
+{"wharf":{"coordinates":[-33.8434,151.2810], "label": "Watsons Bay Wharf"}},
+{"wharf":{"coordinates":[-33.8567,151.1962], "label": "Balmain East Wharf"}},
+{"wharf":{"coordinates":[-33.8423,151.2192], "label": "Neutral Bay Wharf"}},
+{"wharf":{"coordinates":[-33.8385,151.2323], "label": "Mosman Bay Wharf"}},
+{"wharf":{"coordinates":[-33.8733,151.2425], "label": "Double Bay"}},
+{"wharf":{"coordinates":[-33.8455,151.1729], "label": "Cockatoo Island Wharf"}}
+],
+"lines":[
+ {"line":{"name":"F1 Manly", "startcord":[-33.8004,151.2836], "endcord":[-33.8607,151.2120], "color": "red"}},
+    {"line":{"name":"F2 Taronga Zoo", "startcord":[-33.8463,151.2395], "endcord":[-33.8607,151.2120], "color": "blue"}},
+    {"line":{"name":"F3 Parramatta River", "startcord":[-33.8178,151.0438], "endcord":[-33.8436,151.1281], "color": "green"}}, 
+{"line":{"name":"F4 Darling Harbour", "startcord":[-33.8434,151.2810], "endcord":[-33.8567,151.1962], "color": "pink"}},    
+{"line":{"name":"F5 Neutral Bay", "startcord":[-33.8423,151.2192], "endcord":[-33.8607,151.2120], "color": "orange"}},    
+{"line":{"name":"F6 Mosman Bay", "startcord":[-33.8385,151.2323], "endcord":[-33.8607,151.2120], "color": "brown"}},    
+{"line":{"name":"F7 Double Bay", "startcord":[-33.8733,151.2425], "endcord":[-33.8607,151.2120], "color": "grey"}},    
+{"line":{"name":"F8 Cockatoo Island", "startcord":[-33.8455,151.1729], "endcord":[-33.8607,151.2120], "color": "yellow"}}    
+
+ ]}
